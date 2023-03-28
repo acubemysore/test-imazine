@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+form {
+  background-color: #eaeaea;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+
+form section {
+  width: calc(100% / 2 - 2px);
+  flex-shrink: 0;
+  /* border: 1px solid gray; */
+  background-color: #e3dfff;
+  padding: 20px;
+  /* min-width: 200px; */
+  margin: 1px;
+}
+
+form label {
+  text-transform: capitalize;
+}
+
+form [type='date'], [type='submit'], label{
+    align-self: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Projects Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Project Form</h1>
+    <form enctype="multipart/form-data" method="POST" action="/api/v1/projects">
+      <section class="section1">
+        <label>Industry:</label>
+        <input type="text" name="industry" /><br /><br />
+        <label>Category:</label>
+        <input type="text" name="category" /><br /><br />
+        <label>Project title:</label>
+        <input type="text" name="projectTitle" /><br /><br />
+        <label>Trimmed project title:</label>
+        <input type="text" name="trimmedTitle" /><br /><br />
+        <label>Project summary:</label>
+        <input type="text" name="projectSummary" /><br /><br />
+        <label>overview:</label>
+        <input type="text" name="overview" /><br /><br />
+      </section>
+      <section class="section2 services">
+        <h2>Services</h2>
+        <label>Service1:</label>
+        <input type="text" name="services[]" /><br /><br />
+        <label>Service2:</label>
+        <input type="text" name="services[]" /><br /><br />
+        <label>Service3:</label>
+        <input type="text" name="services[]" /><br /><br />
+        <label>Service4:</label>
+        <input type="text" name="services[]" /><br /><br />
+        <label>Service5:</label>
+        <input type="text" name="services[]" /><br /><br />
+      </section>
+      <section class="section3 detailsOfProject">
+        <h2>Project details</h2>
+        <label>Detail 1:</label>
+        <input type="text" name="detailsOfProject[]" /><br /><br />
+        <label>detail 2:</label>
+        <input type="text" name="detailsOfProject[]" /><br /><br />
+        <label>detail 3:</label>
+        <input type="text" name="detailsOfProject[]" /><br /><br />
+        <label>detail 4:</label>
+        <input type="text" name="detailsOfProject[]" /><br /><br />
+        <label>detail 5:</label>
+        <input type="text" name="detailsOfProject[]" /><br /><br />
+      </section>
+      <section class="section4">
+        <h2>Upload Images</h2>
+        <label>Project Images:</label>
+        <input type="file" name="photos" multiple /><br /><br />
+        <label>Social Media Images:</label>
+        <input type="file" name="socialMediaImgs" multiple /><br /><br />
+      </section>
+      <label>Date:</label>
+      <input type="date" name="date" /><br /><br />
+      <input type="submit" value="Add" />
+    </form>
+  </body>
+</html>

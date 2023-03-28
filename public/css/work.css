@@ -1,0 +1,222 @@
+/* *********GENERAL STYLING******** */
+/* ******************************** */
+section {
+  width: calc(var(--mobile-unit-width) * 13);
+  transform: translateX(var(--mobile-unit-width));
+  margin-top: 6.5rem;
+}
+
+.work .section-title {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.work .section-title span:last-child {
+  display: none;
+}
+section:first-of-type {
+  margin-top: 2rem;
+}
+
+/* ******WORK************ */
+/* ******************* */
+
+.work-overview-card {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  animation: fade 0.3s linear;
+}
+.work-overview-card:first-of-type {
+  margin-top: 0;
+}
+.work-overview-img-wrapper {
+  height: 25vh;
+  background-color: var(--img-yellow);
+  margin-bottom: 0.5rem;
+}
+
+/* Category list menu */
+.catog-list {
+  width: calc(var(--mobile-unit-width) * 12);
+  /* background-color: gray; */
+  display: flex;
+  overflow: scroll;
+  margin-bottom: 3.387vh;
+  scroll-behavior: smooth;
+}
+
+.catog-list::-webkit-scrollbar {
+  height: 0;
+}
+.cat-list-btn {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(44, 44, 44);
+  height: 3.687vh;
+  position: absolute;
+  color: white;
+  /* border-bottom: 0.5px solid var(--dark-gray); */
+  border: 0.5px solid yellow;
+  /* border: none;*/
+  outline: none;
+}
+
+.cat-list-btn:last-child {
+  border-right: none;
+}
+
+.cat-list-btn-prev {
+  right: 4px;
+}
+.cat-list-btn-next {
+  right: -16px;
+}
+
+.catog-list li {
+  list-style: none;
+  flex-shrink: 0;
+  padding: 0 10px;
+  border: 1px solid yellow;
+  border-right: none;
+  letter-spacing: 0.15em;
+  background-color: rgb(95, 95, 95);
+}
+
+.catog-list li a {
+  height: 3.387vh;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 78);
+  text-decoration: none;
+  line-height: 3.387vh;
+}
+
+.no-projects {
+  padding: 20rem 0;
+}
+
+.catog-list li.active {
+  background-color: yellow;
+  border: 0.5px solid var(--dark-gray);
+  /* border-right: none; */
+}
+
+.catog-list li.active + li {
+  border-left: none;
+}
+
+.catog-list li.active a {
+  color: black;
+}
+@media screen and (min-width: 800px) {
+  /* *****GENERAL STYLING ********** */
+  /* ******************************** */
+  section {
+    width: calc(var(--desktop-unit-width) * 32);
+    transform: translateX(calc(var(--desktop-unit-width) * 11));
+    position: relative;
+  }
+
+  .work .section-title {
+    display: flex;
+    border-bottom: 0.5px solid var(--dark-gray);
+    right: calc(var(--desktop-unit-width) * 35);
+    cursor: pointer;
+    justify-content: space-between;
+    user-select: none;
+  }
+
+  .work .section-title span:first-child {
+    margin-right: 2rem;
+  }
+
+  .work .section-title span:last-child {
+    display: block;
+  }
+
+  .work .section-title span:nth-child(2) {
+    width: 15px;
+    height: 15px;
+    /* background-color: red; */
+    text-align: center;
+    line-height: 15px;
+  }
+  .catog-list {
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 0;
+    cursor: pointer;
+    right: 0;
+    width: 14.4998vw;
+    max-height: 0px;
+    transition: max-height 0.3s;
+  }
+
+  .catog-list li {
+    width: 100%;
+    border-bottom: none;
+    border-right: 0.5px solid var(--dark-gray);
+    border-left: 0.5px solid var(--dark-gray);
+  }
+
+  .catog-list li:first-of-type {
+    border-top: 0.5px solid var(--dark-gray);
+  }
+  .catog-list li:last-of-type {
+    border-bottom: 0.5px solid var(--dark-gray);
+  }
+
+  .catog-list li:hover {
+    background-color: yellow;
+    border: 0.5px solid var(--dark-gray);
+  }
+
+  .catog-list li:hover + li {
+    border-top: none;
+  }
+
+  .catog-list li:hover a {
+    color: var(--dark-gray) !important;
+  }
+
+  .cat-list-btn {
+    display: none;
+  }
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .work-overview-card {
+    flex-shrink: 0;
+    width: calc(var(--desktop-unit-width) * 12);
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  .work-overview-card:nth-child(even) {
+    margin-left: calc(var(--desktop-unit-width) * 8);
+  }
+
+  .work-overview-img-wrapper {
+    height: 40vh;
+  }
+
+  .more {
+    bottom: 3rem;
+  }
+
+  .catog-list li.active {
+    border-right: 0.5px solid var(--dark-gray);
+    /* border-bottom: none; */
+  }
+
+  .catog-list li.active + li {
+    border-left: 0.5px solid var(--dark-gray);
+    border-top: none;
+  }
+}

@@ -1,0 +1,293 @@
+/* *********GENERAL STYLING******** */
+/* ******************************** */
+section {
+  width: calc(var(--mobile-unit-width) * 13);
+  transform: translateX(var(--mobile-unit-width));
+  margin-top: 3.5rem;
+}
+.services .section-title {
+  right: calc(var(--desktop-unit-width) * 35);
+  cursor: pointer;
+}
+
+.services .section-title-double {
+  padding: 0 0;
+}
+.services .section-title span {
+  display: block;
+  padding: 0.55rem 1.2rem;
+}
+
+.services .section-title span:first-child {
+  border-bottom: 0.5px solid var(--dark-gray);
+}
+.services .section-title span:last-child {
+  border-bottom: 0.5px solid var(--light-gray);
+}
+
+.imagine-quote,
+.inspiration-title,
+.strategy-quote,
+.design-quote,
+.innovation-title,
+.interaction-title {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  color: var(--mid-gray);
+  font-weight: 100;
+  margin-bottom: 2rem;
+  width: 70%;
+}
+
+.imagine-para {
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.imagine-img,
+.strategy-img,
+.design-img {
+  height: 25vh;
+  width: calc(var(--mobile-unit-width) * 13);
+  background-color: #dbd59f;
+}
+
+article {
+  margin-bottom: 4.5rem;
+}
+
+.inspiration,
+.interaction,
+.innovation {
+  /* height: 20vh; */
+  /* background-image: url(../imgs/services/A8.png); */
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+.inspiration img,
+.interaction img,
+.innovation img {
+  width: calc(var(--mobile-unit-width) * 12);
+  position: relative;
+}
+
+.inspiration,
+.innovation {
+  width: calc(var(--mobile-unit-width) * 14);
+  transform: translateX(calc(var(--mobile-unit-width) * -1));
+  padding-left: var(--mobile-unit-width);
+  background-position: 0 40%;
+}
+
+.inspiration img {
+  margin-bottom: 1rem;
+}
+.innovation img {
+  left: calc(var(--mobile-unit-width) * -1);
+}
+
+.interaction img {
+  width: calc(var(--mobile-unit-width) * 9);
+  left: calc(var(--mobile-unit-width) * 1.5);
+  margin-bottom: 2rem;
+}
+
+.inspiration-para,
+.interaction-para,
+.innovation-para {
+  width: calc(var(--mobile-unit-width) * 8);
+  /* transform: translateX(calc(var(--mobile-unit-width) * 6)); */
+}
+
+.strategy td,
+.design td {
+  border: 1px solid rgba(128, 128, 128, 0.918);
+}
+
+.strategy-quote,
+.design-quote {
+  width: calc(var(--mobile-unit-width) * 12);
+}
+
+.strategy-proj-expl,
+.design-proj-expl {
+  display: flex;
+  margin-top: 30px;
+}
+
+.strategy-proj-title,
+.design-proj-title {
+  font-size: 1.6rem;
+  padding-right: 40px;
+  line-height: 1.2;
+  color: var(--mid-gray);
+  width: calc(var(--mobile-unit-width) * 6);
+  flex-shrink: 0;
+}
+
+.design-proj-title {
+  border-top: 1px solid var(--mid-yellow);
+  width: calc(var(--mobile-unit-width) * 5.5);
+  margin-right: calc(var(--mobile-unit-width) / 2);
+}
+
+.services-list,
+.design-list {
+  margin-left: calc(var(--mobile-unit-width) * 6);
+  margin-bottom: 90px;
+}
+
+.design-list {
+  margin-bottom: 30px;
+}
+
+.service-list-title {
+  font-size: 1rem;
+  color: var(--mid-gray);
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid var(--img-yellow);
+  padding-top: 10px;
+  font-size: 1.3rem;
+}
+
+.services-list li,
+.design-list li {
+  color: var(--mid-gray);
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 900px) {
+  /* *****GENERAL STYLING ********** */
+  /* ******************************** */
+  section {
+    width: calc(var(--desktop-unit-width) * 32);
+    transform: translateX(calc(var(--desktop-unit-width) * 11));
+    position: relative;
+  }
+
+  article {
+    margin-bottom: 15rem;
+  }
+  .inspiration img,
+  .innovation img,
+  .interaction img {
+    width: min(50vw, calc(var(--desktop-unit-width) * 20));
+    left: calc(var(--desktop-unit-width) * -11);
+  }
+
+  .interaction img {
+    width: calc(var(--desktop-unit-width) * 15);
+  }
+  .imagine-desc {
+    position: relative;
+    display: flex;
+  }
+
+  .imagine-quote,
+  .strategy-quote,
+  .design-quote,
+  .inspiration-title,
+  .interaction-title,
+  .innovation-title {
+    width: calc(var(--desktop-unit-width) * 12);
+    font-size: 4.2rem;
+  }
+
+  .inspiration-title,
+  .innovation-title {
+    position: relative;
+    top: -4rem;
+  }
+
+  .strategy-quote {
+    width: calc(var(--desktop-unit-width) * 30);
+  }
+
+  .imagine-img,
+  .strategy-img,
+  .design-img {
+    width: calc(var(--desktop-unit-width) * 32);
+    height: 60vh;
+  }
+
+  .inspiration-para,
+  .interaction-para,
+  .innovation-para {
+    position: absolute;
+    top: calc(var(--desktop-unit-height) * 3);
+    width: calc(var(--desktop-unit-width) * 13);
+    transform: translateX(calc(var(--desktop-unit-width) * 10));
+  }
+
+  .inspiration,
+  .interaction,
+  .innovation {
+    padding-left: calc(var(--desktop-unit-width) * 11 - 1px);
+    transform: translateX(calc(var(--desktop-unit-width) * -11 - 1px));
+    /* height: 60vh; */
+    background-size: contain;
+    background-position: calc(var(--mobile-desktop-width) * -1) 0;
+    margin-bottom: 15rem;
+  }
+
+  .interaction {
+    height: 40vh;
+    background-size: 40%;
+    background-position: left bottom;
+  }
+
+  .strategy-projs{
+    display: flex;
+  }
+
+  .strategy-proj-expl {
+    /* position: absolute; */
+    display: block;
+    width: calc(var(--desktop-unit-width) * 10);
+  }
+
+  .strategy-proj-expl-2 {
+    left: calc(var(--desktop-unit-width) * 10);
+  }
+  .strategy-proj-expl-3 {
+    left: calc(var(--desktop-unit-width) * 20);
+  }
+  .strategy-proj-title,
+  .design-proj-title {
+    width: auto;
+    margin-bottom: 1.7rem;
+    border-top: none;
+  }
+
+  .strategy-proj-desc {
+    width: calc(var(--desktop-unit-width) * 4);
+    line-height: 2;
+  }
+  .services-list,
+  .design-list {
+    margin-left: calc(var(--desktop-unit-width) * 20);
+    width: calc(var(--desktop-unit-width) * 10);
+    margin-top: 5rem;
+    /* transform: translateX(calc(var(--desktop-unit-width) * 20))
+      translateY(calc(var(--desktop-unit-height) * 6)); */
+  }
+
+  .design-list {
+    /* transform: translateX(calc(var(--desktop-unit-width) * 20)) translateY(0); */
+    margin-bottom: 10rem;
+  }
+
+  .design {
+    /* margin-top: 35rem; */
+  }
+
+  .design-proj-desc {
+    position: absolute;
+    left: calc(var(--desktop-unit-width) * 10);
+  }
+}

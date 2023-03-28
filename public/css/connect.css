@@ -1,0 +1,94 @@
+section {
+  width: calc(var(--mobile-unit-width) * 12);
+  transform: translateX(var(--mobile-unit-width));
+  margin-top: 2rem;
+}
+
+.namaste {
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: var(--mid-gray);
+  font-weight: 100;
+  margin-bottom: 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+input {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  height: 4.5rem;
+  border: 1px solid var(--mid-gray);
+  padding-left: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background-color: var(--yellow);
+}
+
+input::placeholder {
+  color: var(--light-gray);
+}
+input::-ms-input-placeholder {
+  color: var(--light-gray);
+}
+input:-ms-input-placeholder {
+  color: var(--light-gray);
+}
+
+.city-ph {
+  display: flex;
+  justify-content: space-between;
+}
+.city {
+  width: 58%;
+}
+.phNo {
+  width: 40%;
+}
+
+textarea {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 1rem 0 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background-color: var(--yellow);
+  font-size: 1.7rem;
+}
+
+textarea::placeholder {
+  color: var(--light-gray);
+}
+
+@media screen and (min-width: 800px) {
+  section {
+    height: 70vh;
+    width: calc(var(--desktop-unit-width) * 30);
+    transform: translateX(calc(var(--desktop-unit-width) * 11));
+    position: relative;
+  }
+
+  .namaste {
+    font-size: 5.5rem;
+    margin-top: -10px;
+    position: absolute;
+    right: calc(var(--desktop-unit-width) * 31);
+  }
+
+  form {
+    width: calc(var(--desktop-unit-width) * 19);
+    position: relative;
+    top: 4rem;
+  }
+
+  /* textarea {
+    width: calc(var(--desktop-unit-width) * 10);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 40vh;
+  } */
+}
